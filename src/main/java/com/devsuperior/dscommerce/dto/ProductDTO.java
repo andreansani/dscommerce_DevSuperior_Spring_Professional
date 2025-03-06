@@ -9,7 +9,7 @@ public class ProductDTO {
     private String description;
     private double price;
     private String imgUrl;
-    
+
     public ProductDTO() {
     }
 
