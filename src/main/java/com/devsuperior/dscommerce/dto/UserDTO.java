@@ -26,14 +26,14 @@ public class UserDTO {
     }
 
     public UserDTO(User entity) {
-        id = entity.getId();
-        name = entity.getName();
-        email = entity.getEmail();
-        phone = entity.getPhone();
-        birthDate = entity.getBirthDate();
+        this.id = entity.getId();
+        this.name = entity.getName();
+        this.email = entity.getEmail();
+        this.phone = entity.getPhone();
+        this.birthDate = entity.getBirthDate();
 
         for (GrantedAuthority role: entity.getRoles()){
-            roles.add(role.getAuthority());
+            this.roles.add(role.getAuthority());
         }
     }
 
