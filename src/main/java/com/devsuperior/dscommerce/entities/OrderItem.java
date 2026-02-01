@@ -35,7 +35,7 @@ public class OrderItem {
         id.setOrder(order);
     }
 
-    public Product geProduct(){
+    public Product getProduct(){
         return id.getProduct();
     }
 
